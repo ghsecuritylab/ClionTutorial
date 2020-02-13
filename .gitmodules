@@ -22,3 +22,6 @@
 [submodule "ThirdParty/littlefs"]
 	path = ThirdParty/littlefs
 	url = https://github.com/ARMmbed/littlefs.git
+[submodule "ThirdParty/CMSIS_5"]
+	path = ThirdParty/CMSIS_5
+	url = https://github.com/ARM-software/CMSIS_5.git
