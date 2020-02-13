@@ -19,3 +19,6 @@
 [submodule "ThirdParty/fatfs"]
 	path = ThirdParty/fatfs
 	url = https://github.com/abbrev/fatfs.git
+[submodule "ThirdParty/littlefs"]
+	path = ThirdParty/littlefs
+	url = https://github.com/ARMmbed/littlefs.git
