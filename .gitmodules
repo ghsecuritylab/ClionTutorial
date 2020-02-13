@@ -4,3 +4,6 @@
 [submodule "ThirdParty/cpputest"]
 	path = ThirdParty/cpputest
 	url = https://github.com/cpputest/cpputest.git
+[submodule "ThirdParty/nrfx"]
+	path = ThirdParty/nrfx
+	url = https://github.com/NordicSemiconductor/nrfx.git
