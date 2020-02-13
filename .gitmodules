@@ -13,3 +13,6 @@
 [submodule "ThirdParty/stm32-cmake"]
 	path = ThirdParty/stm32-cmake
 	url = https://github.com/ObKo/stm32-cmake.git
+[submodule "ThirdParty/etl"]
+	path = ThirdParty/etl
+	url = https://github.com/ETLCPP/etl.git
