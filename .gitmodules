@@ -16,3 +16,6 @@
 [submodule "ThirdParty/etl"]
 	path = ThirdParty/etl
 	url = https://github.com/ETLCPP/etl.git
+[submodule "ThirdParty/fatfs"]
+	path = ThirdParty/fatfs
+	url = https://github.com/abbrev/fatfs.git
