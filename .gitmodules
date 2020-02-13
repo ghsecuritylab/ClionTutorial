@@ -25,3 +25,6 @@
 [submodule "ThirdParty/CMSIS_5"]
 	path = ThirdParty/CMSIS_5
 	url = https://github.com/ARM-software/CMSIS_5.git
+[submodule "ThirdParty/lwip"]
+	path = ThirdParty/lwip
+	url = https://git.savannah.nongnu.org/git/lwip.git
