@@ -7,3 +7,6 @@
 [submodule "ThirdParty/nrfx"]
 	path = ThirdParty/nrfx
 	url = https://github.com/NordicSemiconductor/nrfx.git
+[submodule "ThirdParty/cmake-nRF5x"]
+	path = ThirdParty/cmake-nRF5x
+	url = https://github.com/Polidea/cmake-nRF5x.git
