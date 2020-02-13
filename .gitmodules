@@ -28,3 +28,6 @@
 [submodule "ThirdParty/lwip"]
 	path = ThirdParty/lwip
 	url = https://git.savannah.nongnu.org/git/lwip.git
+[submodule "ThirdParty/picotcp"]
+	path = ThirdParty/picotcp
+	url = https://github.com/tass-belgium/picotcp.git
