@@ -31,3 +31,6 @@
 [submodule "ThirdParty/picotcp"]
 	path = ThirdParty/picotcp
 	url = https://github.com/tass-belgium/picotcp.git
+[submodule "ThirdParty/tinyusb"]
+	path = ThirdParty/tinyusb
+	url = https://github.com/hathach/tinyusb.git
