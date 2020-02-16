@@ -3,6 +3,9 @@ SET(CMAKE_SYSTEM_NAME Generic)
 SET(CMAKE_SYSTEM_VERSION 1)
 cmake_minimum_required(VERSION 3.7)
 
+# ターゲット種別を判別するための変数を定義
+SET(TARGET_TYPE "HOST" CACHE STRING description FORCE)
+
 # ------------------ Cache -----------------------------
 SET(TOOLCHAIN_PATH "D:/msys64/mingw64/bin" CACHE STRING description)
 SET(CMAKE_C_COMPILER_WORKS 1)
