@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Test_Common.exe" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CLion_Tutorial" TARGET_NAME="Test_Common.exe" CONFIG_NAME="Debug_WIN" RUN_TARGET_PROJECT_NAME="CLion_Tutorial" RUN_TARGET_NAME="Test_Common.exe">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -3,7 +3,17 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ThirdParty" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/CMSIS_5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/cmake-nRF5x" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ThirdParty/cpputest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/etl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/fatfs" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ThirdParty/googletest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/littlefs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/lwip" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/nrfx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/picotcp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/stm32-cmake" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdParty/tinyusb" vcs="Git" />
   </component>
 </project>

@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Embedded_nRF.elf" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CLion_Tutorial" TARGET_NAME="Embedded_nRF.elf" CONFIG_NAME="Debug_ARM" RUN_TARGET_PROJECT_NAME="CLion_Tutorial" RUN_TARGET_NAME="Embedded_nRF.elf">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

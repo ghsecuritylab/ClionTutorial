@@ -1,43 +1,3 @@
-# =========== 変数設定値を確認 ============
-message(STATUS "========================================================================")
-message(STATUS "NRF_TARGET : ${NRF_TARGET}")
-message(STATUS "NRF_LINKER_SCRIPT : ${NRF_LINKER_SCRIPT}")
-message(STATUS "NRFJPROG : ${NRFJPROG}")
-message(STATUS "NRF_COMPONENTS_DIR : ${NRF_COMPONENTS_DIR}")
-message(STATUS "NRFX_DIR : ${NRFX_DIR}")
-message(STATUS "========================================================================")
-message(STATUS "C_COMPILER : ${CMAKE_C_COMPILER}")
-message(STATUS "CXX_COMPILER : ${CMAKE_CXX_COMPILER}")
-message(STATUS "========================================================================")
-
-# =========== nrfjprogのパスが存在するかを確認 ===========
-if (NOT NRFJPROG)
-    message(FATAL_ERROR "The path to the nrfjprog utility (NRFJPROG) don't exist.")
-endif ()
-# =========== nRF SDKのパスが存在するかを確認 ===========
-if (NOT NRF_SDK_DIR)
-    message(FATAL_ERROR "The path to the nRF SDK directory don't exist.")
-endif ()
-
-# =========== nRF SDK componentsのパスが存在するかを確認 ===========
-if (NOT NRF_COMPONENTS_DIR)
-    message(FATAL_ERROR "The path to the nRF SDK components directory don't exist.")
-endif ()
-# =========== nrfxのパスが存在するかを確認 ===========
-if (NOT NRFX_DIR)
-    message(FATAL_ERROR "The path to the nrfx directory don't exist.")
-endif ()
-
-# =========== nRFのターゲットが設定されているかを確認 ===========
-if (NRF_TARGET MATCHES "nrf52840_xxaa")
-
-elseif (NRF_TARGET MATCHES "nrf52832_xxaa")
-
-elseif (NOT NRF_TARGET)
-    message(FATAL_ERROR "nRF target must be defined")
-else ()
-    message(FATAL_ERROR "Only nRF52840_xxaa,nRF52832_xxaa are supported right now")
-endif ()
 
 # =========== ターゲットとするCPU固有の設定 ===========
 if (NRF_TARGET MATCHES "nrf52840_xxa")
@@ -68,13 +28,13 @@ elseif (NRF_TARGET MATCHES "nrf52832_xxaa")
 endif ()
 # ===============================================
 
-# =========== C/C++/ASMのフラグ設定 ==========
 set(COMMON_FLAGS "-g3 -mthumb -mabi=aapcs ${CPU_FLAGS}")
+# =========== C/C++/ASMのフラグ設定 ==========
 set(CMAKE_C_FLAGS "${COMMON_FLAGS} -Wall -Wimplicit-function-declaration -ffunction-sections -fdata-sections -fno-strict-aliasing -fno-builtin --short-enums")
-set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O1")
+set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O3")
 set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -O3")
 set(CMAKE_CXX_FLAGS "${COMMON_FLAGS} -fno-use-cxa-atexit -fno-exceptions -fno-rtti  -Wall -Wimplicit-function-declaration -ffunction-sections -fdata-sections -fno-strict-aliasing -fno-builtin --short-enums")
-set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -O1")
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -O3")
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
 set(CMAKE_ASM_FLAGS "${COMMON_FLAGS}")
 
@@ -105,8 +65,8 @@ list(APPEND SDK_INCLUDE_DIRS
         "${NRF_SDK_DIR}/external/fprintf"
         "${NRF_SDK_DIR}/external/utf_converter"
         "${NRF_COMPONENTS_DIR}/nfc/ndef/generic/message "
-        "${NRF_COMPONENTS_DIR}/nfc/t2t_lib" 
-        "${NRF_COMPONENTS_DIR}/nfc/t4t_parser/hl_detection_procedure" 
+        "${NRF_COMPONENTS_DIR}/nfc/t2t_lib"
+        "${NRF_COMPONENTS_DIR}/nfc/t4t_parser/hl_detection_procedure"
         "${NRF_COMPONENTS_DIR}/ble/ble_services/ble_ancs_c"
         "${NRF_COMPONENTS_DIR}/ble/ble_services/ble_ias_c"
         "${NRF_COMPONENTS_DIR}/libraries/pwm"
@@ -304,4 +264,4 @@ list(APPEND SDK_SOURCE_FILES
 # toolchain specific
 list(APPEND SDK_INCLUDE_DIRS
         "${NRF_COMPONENTS_DIR}/toolchain/cmsis/include"
-)
+        )
